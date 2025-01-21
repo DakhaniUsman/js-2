@@ -148,3 +148,30 @@ if (number % 2 == 0) {
 } else {
   console.log(`${number} is odd`);
 }
+
+// Switch Conditional Statement
+console.log("*** Switch Conditional Statements ***");
+
+// switch (key) {
+//   case value:
+//     console.log("based on condition");
+//     break;
+//   default:
+//     console.log("default console log");
+// }
+
+var fruit = "Apple";
+switch (fruit) {
+  case "Apple":
+    console.log(`You have seleceted ${fruit}.`);
+    break;
+  case "Mango":
+    console.log(`You have seleceted ${fruit}.`);
+    break;
+  case "Strawberry":
+    console.log(`You have seleceted ${fruit}.`);
+    break;
+  default:
+    console.log(`kindly select from given fruits`)
+    break;
+}
