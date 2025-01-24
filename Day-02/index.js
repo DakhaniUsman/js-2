@@ -4,6 +4,8 @@
 
 // Arihtmetic Operators
 
+// Conditional Statements if else, switch
+
 // Increment ++
 
 // used to increase the number by some value
@@ -172,6 +174,6 @@ switch (fruit) {
     console.log(`You have seleceted ${fruit}.`);
     break;
   default:
-    console.log(`kindly select from given fruits`)
+    console.log(`kindly select from given fruits`);
     break;
 }
