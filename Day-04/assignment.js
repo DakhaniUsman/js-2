@@ -59,7 +59,20 @@ for (let i = start; i <= end; i += sequence) {
 
 // 5. Write a loop to calculate the factorial of a given number.
 
+console.log("5. Write a loop to calculate the factorial of a given number.");
+
+var number = 5;
+var product = 1;
+
+for (let i = 1; i <= number; i++) {
+  product = product * i;
+}
+console.log(number,"! =",product);
+
+
 // 6. Use a for loop with a conditional to print all odd numbers between 1 and 20.
+
+
 
 // 7. Write a loop to calculate the sum of all even numbers between 1 and 100.
 
