@@ -128,6 +128,17 @@ console.log(PrimeNumber());
 
 // 9. Write a for loop to reverse the digits of a number (e.g., input: 123, output: 321).
 
+console.log(
+  "9. Write a for loop to reverse the digits of a number (e.g., input: 123, output: 321)."
+);
+
+var number = 123;
+console.log(number % 10);
+number = 12;
+console.log(number % 10);
+number = 1;
+console.log(number % 10);
+
 // 10. Create a for loop to find the smallest number in an array.
 
 // Intermediate Level
