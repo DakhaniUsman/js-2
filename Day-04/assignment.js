@@ -67,16 +67,63 @@ var product = 1;
 for (let i = 1; i <= number; i++) {
   product = product * i;
 }
-console.log(number,"! =",product);
-
+console.log(number, "! =", product);
 
 // 6. Use a for loop with a conditional to print all odd numbers between 1 and 20.
 
+console.log(
+  "6. Use a for loop with a conditional to print all odd numbers between 1 and 20."
+);
 
+var start = 1;
+var end = 20;
+var sequence = 1;
+
+for (let i = start; i <= end; i++) {
+  if (i % 2 != 0) {
+    console.log(i);
+  }
+}
 
 // 7. Write a loop to calculate the sum of all even numbers between 1 and 100.
+console.log(
+  "7. Write a loop to calculate the sum of all even numbers between 1 and 100."
+);
 
-// 8. Use a loop to check if a given number is prime.
+var start = 1;
+var end = 100;
+var sequence = 1;
+var sum = 0;
+
+for (let i = start; i <= end; i += sequence) {
+  if (i % 2 == 0) {
+    sum += i; // sum = sum + i;
+  }
+}
+console.log(sum);
+
+// 8. Use a loop to check if a given number is prime
+console.log("8. Use a loop to check if a given number is prime.");
+
+var number = 17;
+
+// logic => number which is divisible by 1 and the numebr itself
+
+function PrimeNumber() {
+  if (number < 2) {
+    return false;
+  }
+
+  for (let i = 2; i < Math.sqrt(number); i++) {
+    if (number % i == 0) {
+      return false;
+    }
+  }
+
+  return `${number} is a prime number`;
+}
+
+console.log(PrimeNumber());
 
 // 9. Write a for loop to reverse the digits of a number (e.g., input: 123, output: 321).
 
