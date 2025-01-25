@@ -108,6 +108,7 @@ console.log("8. Use a loop to check if a given number is prime.");
 var number = 17;
 
 // logic => number which is divisible by 1 and the numebr itself
+// go till square root as Math.sqrt() give square root of the number in floor value
 
 function PrimeNumber() {
   if (number < 2) {
