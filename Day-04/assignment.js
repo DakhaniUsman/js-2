@@ -228,9 +228,37 @@ for (let i = 1; i <= 10; i++) {
 
 // 16. Use a loop and conditionals to print the Fibonacci sequence up to n terms.
 
+console.log(
+  "16. Use a loop and conditionals to print the Fibonacci sequence up to n terms."
+);
+
+// logic => first number = 0 ; second number = 1; now next number will be the sum of last two numbers
+
+function Fibonacci(n) {
+  var a = 0; // first number
+  var b = 1; // second number
+  // var n = 7; // nth term
+
+  console.log(a);
+
+  if (n > 2) {
+    console.log(b);
+
+    for (let i = 2; i < 7; i++) {
+      var nextNumber = a + b;
+      console.log(nextNumber);
+
+      a = b;
+      b = nextNumber;
+    }
+  }
+}
+
+console.log(Fibonacci(7));
+
 // 17. Write a program to check if a given string is a palindrome using loops.
 console.log(
-  "17. RWrite a program to check if a given string is a palindrome using loops."
+  "17. Write a program to check if a given string is a palindrome using loops."
 );
 
 var word = "abcdcba";
