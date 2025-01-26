@@ -140,25 +140,157 @@ number = 1;
 console.log(number % 10);
 
 // 10. Create a for loop to find the smallest number in an array.
+console.log("10. Create a for loop to find the smallest number in an array.");
+
+var array = [20, 30, 10, 50, 40];
+var smallest = array[0]; // first value
+
+for (let i = 0; i < array.length; i++) {
+  // console.log(smallest, "smallest", array[i], "array[i]");
+  if (array[i] < smallest) {
+    smallest = array[i];
+  }
+}
+
+console.log(smallest);
 
 // Intermediate Level
 
 // 11. Write a for loop to count the number of vowels in a string.
+console.log("11. Write a for loop to count the number of vowels in a string.");
+
+var string = "awdiz";
+var count = 0;
+
+for (let i = 0; i < string.length; i++) {
+  if (
+    string[i] == "a" ||
+    string[i] == "e" ||
+    string[i] == "i" ||
+    string[i] == "o" ||
+    string[i] == "u"
+  ) {
+    count++;
+    // console.log(string[i], "is a vowel", count, "total number of vowels");
+  }
+}
+console.log("Total number of vowel in string", string, "is", count);
 
 // 12. Use a loop to find the largest number in an array.
+console.log("12. Use a loop to find the largest number in an array.");
+
+var array = [66, 22, 99, 44, 88, 11];
+var largest = array[0]; // first value
+
+for (let i = 0; i < array.length; i++) {
+  // console.log(largest, "largest", array[i], "array[i]");
+  if (array[i] > largest) {
+    largest = array[i];
+  }
+}
+
+console.log(largest);
 
 // 13. Write a loop to calculate the sum of numbers in an array.
+console.log("13. Write a loop to calculate the sum of numbers in an array.");
+
+var array = [10, 20, 30, 40, 50];
+var sum = 0;
+
+for (let i = 0; i < array.length; i++) {
+  sum += array[i];
+  // console.log(sum);
+}
+
+console.log(sum);
 
 // 14. Use a for loop to print all elements of an array in reverse order.
+console.log(
+  "14. Use a for loop to print all elements of an array in reverse order."
+);
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < array.length; i++) {
+  console.log(array[array.length - 1 - i]);
+}
 
 // 15. Write a loop to generate a multiplication table for a given number.
+console.log(
+  "15. Write a loop to generate a multiplication table for a given number."
+);
+
+var number = 7;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(number, "x", i, "=", number * i);
+}
 
 // 16. Use a loop and conditionals to print the Fibonacci sequence up to n terms.
 
 // 17. Write a program to check if a given string is a palindrome using loops.
+console.log(
+  "17. RWrite a program to check if a given string is a palindrome using loops."
+);
+
+var word = "abcdcba";
+
+function Palindrome() {
+  for (let i = 0; i < Math.floor(word.length / 2); i++) {
+    console.log(word[i], word[word.length - 1 - i]);
+    if (word[i] != word[word.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(Palindrome());
 
 // 18. Use a for loop to find all perfect squares between 1 and 100.
+console.log(
+  "18. Use a for loop to find all perfect squares between 1 and 100."
+);
+
+var start = 1;
+var end = 100;
+var sequence = 1;
+
+for (let i = start; i < end; i += sequence) {
+  if (i * i > end) {
+    break;
+  }
+
+  console.log(i, "sqaure =", i * i);
+}
 
 // 19. Write a loop to find the second-largest number in an array.
+console.log("19. Write a loop to find the second-largest number in an array.");
+
+var array = [5, 2, 7, 4, 9, 6];
+var newArray = [];
+var largest = 0; // first value
+
+for (let i = 0; i < array.length; i++) {
+  // console.log(largest,"largest", array[i], "array[i]")
+  if (array[i] > largest) {
+    largest = array[i];
+    newArray.push(largest);
+    // console.log(newArray);
+  }
+}
+console.log("second largest : ", newArray[newArray.length - 2]);
 
 // 20. Use a for loop and conditionals to print all numbers divisible by both 3 and 5 between 1 and 100.
+console.log(
+  "20. Use a for loop and conditionals to print all numbers divisible by both 3 and 5 between 1 and 100."
+);
+var start = 1;
+var end = 100;
+var sequence = 1;
+
+for (let i = start; i <= end; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log(i);
+  }
+}
