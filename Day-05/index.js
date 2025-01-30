@@ -14,9 +14,9 @@
 
 // Loops - break and continue
 
-// Functions - 1. Named Function (Traditional Function), 2. Anonymous Function (Arrow Function)
-
 // Undefined datatype
+
+// Functions - 1. Named Function (Traditional Function), 2. Anonymous Function (Arrow Function)
 
 // while loop is similar to for loop but it gives you freedom to control the sequence anywhere during the itteration
 
