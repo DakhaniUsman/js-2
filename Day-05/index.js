@@ -14,6 +14,10 @@
 
 // Loops - break and continue
 
+// Functions - 1. Named Function (Traditional Function), 2. Anonymous Function (Arrow Function)
+
+// Undefined datatype
+
 // while loop is similar to for loop but it gives you freedom to control the sequence anywhere during the itteration
 
 // syntax is
@@ -89,6 +93,10 @@ while (i > end) {
   i--;
 }
 
+// break => breaks the loop and prevents further execution
+// continue => skips the current execution and moves to the next iteration
+
+
 // Break
 console.log("concept of break");
 
@@ -123,3 +131,87 @@ while (i <= end) {
   i++;
 }
 // noticed how the everything from 1 to 10 is printed except 5
+
+// Function is a block of code that can be called and executed anywhere in the program
+// There are two types of functions in JavaScript 1. Named Function (Traditional Function) 2. Anonymous Function (Arrow Function)
+
+// when we define a function we have to call it
+
+// 1. Named Function (Traditional Function) hoisting is possible
+// 2. Anonymous Function (Arrow Function ()={}) hositing is not possible
+// functionName();
+
+console.log("Named Function (Traditional Function) ----");
+function functionName(props) { // props are parameters that are passed to the function
+  console.log("Function is called");
+  // multiple lines of code
+}
+
+functionName();
+
+
+
+// functionclear
+
+// add(5,10);  this is anonymous function (arrow function) so here hoisting is not possible
+
+
+console.log("Anonymous Function (Arrow Function) ----");
+
+const add = (a, b) => {
+  console.log(a + b);
+}
+
+add(5, 10); // here the function is called and is executed since it is defined earlier
+
+
+//  Accesing props in function
+
+
+console.log("Accesing props in function ----")
+var num1 = 10;
+var num2 = 20;
+
+function Addition(a, b) {
+  console.log(a, b);
+}
+
+Addition(num1); // this parenthesis has a connection with the above parenthesis anything we pass in here can be accesible above in the function
+
+
+// undefined datatype
+//  when we declare a variable and do not assign any value to it then it is undefined
+//  in the above example b is undefined because we have used it but not assigned any value to it
+
+
+var myName;
+
+console.log(myName, typeof (myName));
+
+
+// Q. Given an range from 25 to 50 find out count of even numbers using function while loop and conditional statement
+var start = 25;
+var end = 50;
+var count = 0;
+
+
+const countEven = (start, end, count) => {
+
+  console.log("start :", start, "end :", end, "count :", count,);
+
+  while (start <= end) {
+    if (start % 2 == 0) {
+      count++;
+      console.log(start, count)
+    }
+
+    start++; // make sure u increment the sequence otherwise it will go in infinite loop
+  }
+
+  console.log(count, "final count");
+
+}
+
+// noticed how everything within the function is dynamic. we can pass any value to the function and it will work accordingly
+
+countEven(start, end, count);
