@@ -68,3 +68,10 @@ const countFunction = (start, end) => {
 
 
 countFunction(10, 30);
+
+
+// Array -> stores multiple data 
+
+var location = "Awdiz"
+
+var myArray = ["name","age"]
