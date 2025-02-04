@@ -20,6 +20,19 @@
 
 // Object -> used to store multiple
 
+// Object -> accessing object using . and [] syntax 
+
+// Object -> defining a function within object and executing it using key name object.keyName();
+
+// Object -> Destructuring Object
+
+// Object -> spread operator (...) 
+
+// Object -> this keyword used to access data wihtin that object
+
+// Template litterals to use javascript within string syntax ` HI! ${name},`
+
+
 // syntax =>  var object = { key : "value" , key2 : "value2"}
 
 var myObject = {
