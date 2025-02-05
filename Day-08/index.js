@@ -82,3 +82,14 @@ var newData = data.map((ele) => ele * 2);
 console.log(newData);
 
 
+
+// filter => it filters out data from original array thereby reducing it
+// Note : it dosent return a new array
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const evenNumbers = array.filter((number) => {
+    return number % 2 == 0;
+} )
+
+console.log(evenNumbers)
