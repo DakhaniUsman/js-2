@@ -141,16 +141,33 @@ obj.greet();
 console.log("----------");
 
 
+console.log("Class Contructor")
 // class in js
 // class provides a cleaner method to construct object
 // object constructor is used to create multiple objects having smae structure
 
-function Person(name,age){
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+
+//   console.log(`Hello! ${this.name} you are ${age} years old!`);
+// }
+
+// const person1 = new Person("Alice", 19);
+
+class Person {
+  constructor(name, age) {
     this.name = name;
     this.age = age;
+  }
 
-    console.log(`Hello! ${this.name} you are ${age} years old!`)
+  greet() {
+    console.log(`Hello! ${this.name} you are  ${this.age} years old !`);
+  }
 }
 
-const person1 = new Person("Alice",19);
+const person2 = new Person("Kirito",15);
+console.log(person2.greet())
 
+const person3 = new Person("Asuna",19);
+console.log(person3.greet())
