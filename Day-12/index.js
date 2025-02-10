@@ -63,8 +63,12 @@ eventPara.addEventListener("copy", function () {
   alert("Don't copy me!");
 });
 
+
+
 const parentEventHandling = document.querySelector(".event-handling");
 console.log(parentEventHandling)
+
+// Event Bubbling : In this concept when a user clicks on a child element where event listener is added the event which is applied on parent element also gets triggered
 
 parentEventHandling.addEventListener("click", function () {
   console.log("parentelement clicked");
@@ -73,6 +77,59 @@ parentEventHandling.addEventListener("click", function () {
 //     alert("Don't copy me!")
 // })
 
-// event deligation
 
-// when
+
+// event deligation : in this method we add event only to the parent element that will handle events for the child element also
+
+
+const eventDelegationParent = document.getElementById("eventDelegationParent");
+eventDelegationParent.style.border = "2px solid black";
+eventDelegationParent.style.marginTop = "20px";
+console.log(eventDelegationParent);
+
+const eventDelegationChild = document.createElement("h3");
+eventDelegationChild.innerHTML = "This is event delegation";
+eventDelegationChild.style.border = "2px solid red";
+eventDelegationChild.id = "bubbledChild";
+
+console.log(eventDelegationChild);
+
+eventDelegationParent.appendChild(eventDelegationChild);
+
+eventDelegationParent.addEventListener("click",()=>{
+  if(event.target.id !== "child"){
+    console.log("eventDelegationParent is clicked");
+  }
+
+  if(event.target.id == "bubbledChild"){
+    console.log("I m event bubbled child >_< ")
+  }
+})
+
+// LocalStorage
+
+// syntax => localstorage.setItem()
+//        => localstorage.getItem()
+//        => localstorage.clear()
+
+localStorage.setItem("username","unknown");
+
+function saveName(){
+
+
+  const name = document.getElementById("name").value;
+
+  console.log(name);
+
+  localStorage.setItem("name",name);
+}
+
+const username = localStorage.getItem("username");
+console.log("username : ",username)
+
+
+// localStorage.clear()
+
+document.getElementById("username").addEventListener("change", function (){
+  console.log(event.target.value)
+})
