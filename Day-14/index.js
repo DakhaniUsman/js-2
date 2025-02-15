@@ -55,6 +55,9 @@ increment(); // count : 2
 increment(); // count : 3
 
 
+// Currying
+
+
 
 // call(), apply() and bind() methods
 
